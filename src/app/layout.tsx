@@ -1,6 +1,7 @@
 import Header from "./components/header/Header";
 import "./globals.css";
 import { Roboto } from "@next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 const roboto = Roboto({ weight: ["300", "700"], subsets: ["latin"] });
 export default function RootLayout({
   children,
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Header />
         {children}
+        <Analytics />
       </body>
     </html>
   );
