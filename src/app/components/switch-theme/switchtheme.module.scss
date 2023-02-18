@@ -1,0 +1,9 @@
+.switch {
+    svg {
+        cursor: pointer;
+        display: none;
+    }
+    svg.active {
+        display: block;
+    }
+}

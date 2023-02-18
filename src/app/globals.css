@@ -1,5 +1,41 @@
 :root {
   --max-width: 1100px;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+
+  /* Light theme */
+  --background-color: #b1b5aa;
+  --text-color: #000000;
+  --accent-color: #0077cc;
+  --border-color: #cccccc;
+  --color-container: rgb(223, 223, 239);
+}
+
+/* Dark theme */
+:root[data-theme='dark'] {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --accent-color: #00e6e6;
+  --border-color: #666666;
+  --color-container: rgb(112, 7, 88);
+}
+
+.content-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  /* color: white; */
+  /* background-color: var(--color-container); */
+}
+
+body {
+  transition: background-color 0.5s ease, color 0.3s ease;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+
+/* 
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -41,6 +77,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .content-container {
+    color: red !important;
+  }
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -104,4 +143,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
