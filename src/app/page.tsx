@@ -11,6 +11,7 @@ export default function Home() {
         <h2>Lorem ipsum dolor sit amet.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit suscipit molestias perferendis nisi! Quo ex ipsam nostrum beatae non.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, modi?</p>
+        <h3>Hola Male ♥</h3>
       </div>
     </main>
   );
