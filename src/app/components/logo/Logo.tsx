@@ -1,11 +1,9 @@
 import styles from "./logo.module.scss";
 import Link from "next/link";
-import SvgComponent from "../svg/svg";
 
 export default function Logo() {
   return (
     <Link href="/">
-      {/* <SvgComponent className={styles.logo} /> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width={2805.333}
