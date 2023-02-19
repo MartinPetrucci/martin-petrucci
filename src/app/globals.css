@@ -8,6 +8,11 @@
   --accent-color: #0077cc;
   --border-color: #cccccc;
   --color-container: rgb(223, 223, 239);
+
+  --primary-color: #007bff; /* Blue */
+  --primary-color-dark: #0060ac; /* Darker blue */
+  --secondary-color: #6c757d; /* Gray */
+  --secondary-color-dark: #495057; /* Darker gray */
 }
 
 /* Dark theme */
@@ -17,6 +22,11 @@
   --accent-color: #00e6e6;
   --border-color: #666666;
   --color-container: rgb(112, 7, 88);
+
+  --primary-color: #7abaff; /* Light blue */
+  --primary-color-dark: #3e92cc; /* Darker light blue */
+  --secondary-color: #b9b9b9; /* Light gray */
+  --secondary-color-dark: #7a7a7a; /* Darker light gray */
 }
 
 .content-container {
