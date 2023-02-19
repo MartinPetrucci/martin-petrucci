@@ -1,7 +1,12 @@
+import Image from "next/image";
 import Button from "../components/button/Button";
 
 async function getData() {
-  const res = await fetch(`${process.env.API_URL}/hello`);
+  const res = await fetch(`${process.env.API_URL}/images`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ prompt: "an orange dog jumping over a cliff" }),
+  });
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 
@@ -22,10 +27,9 @@ export default async function ImagesPage() {
       <div className="content-container">
         <h1>Images</h1>
         <input type="text" />
-        {
-            JSON.stringify(data)
-        }
-        {/* <Button /> */}
+        {JSON.stringify(data)}
+        {/* {data && <Image src={data.image_url} alt="something" width={50} height={50} />} */}
+        {data && <img src={data.image_url} alt="something"/>}
       </div>
     </main>
   );
